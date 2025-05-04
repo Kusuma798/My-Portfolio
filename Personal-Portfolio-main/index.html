@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Personal Portfolio - KUSUMA BANDI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <header>
+      <nav>
+        <div class="logo" tabindex="0" aria-label="Kusuma Bandi Portfolio">Kusuma B.</div>
+        <ul>
+          <li><a href="#about" class="nav-link" tabindex="0">About</a></li>
+          <li><a href="#skills" class="nav-link" tabindex="0">Skills</a></li>
+          <li><a href="#projects" class="nav-link" tabindex="0">Projects</a></li>
+          <li><a href="#contact" class="nav-link" tabindex="0">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Toggle dark and light theme">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-text">
+      <h1 tabIndex="0">Hi, I'm Kusuma Bandi</h1>
+      <h2 tabIndex="0">Front-End Developer</h2>
+      <p tabIndex="0">Welcome to my personal portfolio where I showcase my skills and projects.</p>
+      <a href="#contact" class="btn-primary" tabindex="0" aria-label="Contact Kusuma Bandi">Get in Touch</a>
+      <a href="C:\Users\User\Downloads\Kusuma Bandi 05 (1).pdf.pdf" class="btn-primary" tabindex="0" aria-label="Kusuma Bandi cv">Download CV</a>
+    </div>
+    <div class="hero-img" aria-hidden="true">
+      <img src="assests/Cartoon.png" alt="Portrait photo of a smiling woman representing Kusuma" />
+    </div>
+  </section>
+
+  <section id="about" tabindex="0">
+    <h2>About Me</h2>
+    <p>Hello! I'm Kusuma. I'm a front-end developer who enjoys creating websites that are easy to use and look great.
+      i work with HTML, CSS, and JavaScript to build web pages. I love making ideas come to life on the screen</p>
+  </section>
+
+  <section id="skills" tabindex="0">
+    <h2>Skills</h2>
+    <div class="skill-list" aria-label="List of skills with proficiency bars">
+      <div class="skill">
+        HTML
+        <div class="bar-bg">
+          <div class="bar-fill" style="--skill-level: 95%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        CSS 
+        <div class="bar-bg">
+          <div class="bar-fill" style="--skill-level: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        JavaScript
+        <div class="bar-bg">
+          <div class="bar-fill" style="--skill-level: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        React
+        <div class="bar-bg">
+          <div class="bar-fill" style="--skill-level: 75%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        UI/UX Design
+        <div class="bar-bg">
+          <div class="bar-fill" style="--skill-level: 50%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" tabindex="0">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <article class="project-card" tabindex="0" aria-label="Project: Portfolio Website">
+        <img class="project-image" src="assests/card 0.png" alt="Preview the personal portfolio website project" />
+        <div class="project-content">
+          <h3>Portfolio Website</h3>
+          <p>A fully responsive personal portfolio showcasing my skills and projects with interactive animations.</p>
+          <a href="" target="_blank" rel="noopener" class="btn-project" tabindex="0">View Code</a>
+        </div>
+      </article>
+
+      <article class="project-card" tabindex="0" aria-label="Project: Fake news Detection Project">
+        <img class="project-image" src="assests/card 2.png" alt="Preview the fake news detection project" />
+        <div class="project-content">
+          <h3>Fake News Detection </h3>
+          <p>A Fake news detection to identify and classify misleading online content using machine learning.</p>
+          <a href="https://github.com/Kusuma798/Fake-News-Detection-Project" target="_blank" rel="noopener" class="btn-project" tabindex="0">View Code</a>
+        </div>
+      </article>
+
+      <!-- <article class="project-card" tabindex="0" aria-label="Project: Own AI Agent Project">
+        <img class="project-image" src="assests/Card 3.png" alt="Preview the Own AI Agent project" />
+        <div class="project-content">
+          <h3>Own AI Agent</h3>
+          <p>Own AI Agent capable of performing tasks and responding intelligently using natural language processing.</p>
+          <a href="" target="_blank" rel="noopener" class="btn-project" tabindex="0">View Code</a>
+        </div>
+      </article> -->
+    </div>
+  </section>
+
+  <section id="contact" aria-label="Contact form" tabindex="0">
+    <h2>Contact</h2>
+    <form id="contact-form" aria-live="polite" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+
+      <div class="thankyou" role="alert" aria-live="assertive">Thank you! Your message has been sent.</div>
+    </form>
+  </section>
+
+  <footer aria-label="Footer">
+    <p>© 2025 Kusuma Bandi | Connect with me:
+      <a href="https://www.linkedin.com/in/kusuma-bandi-866572270/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a> |
+      <a href="https://github.com/Kusuma798" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a> |
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener" aria-label="GMail profile">GMail</a>
+    </p>
+  </footer> 
+  <script src="index.js"></script>
+</body>
+</html>
